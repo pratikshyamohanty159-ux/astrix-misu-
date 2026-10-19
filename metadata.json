@@ -1,0 +1,6 @@
+{
+  "name": "Misu’s Little Star Office",
+  "description": "Meet Misu, a tiny celestial baby and Junior Starlight Collector at the Midnight Sky Department. Collect fallen stars, explore her story, and visit her Dream Room.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

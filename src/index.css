@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-fredoka: 'Fredoka', cursive, sans-serif;
+    --font-nunito: 'Nunito', sans-serif;
+    --font-caveat: 'Caveat', cursive;
+  }
+
+  body {
+    font-family: var(--font-nunito);
+    background-color: #19182F;
+    color: #FFF7ED;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-heading {
+    font-family: var(--font-fredoka);
+  }
+
+  .font-handwriting {
+    font-family: var(--font-caveat);
+  }
+}
+
+/* Custom dreamy scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #19182F;
+}
+::-webkit-scrollbar-thumb {
+  background: #6F61A8;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #CDB7F3;
+}
+
+@keyframes gentle-float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1deg);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 8px rgba(255, 229, 163, 0.4));
+  }
+  50% {
+    filter: drop-shadow(0 0 18px rgba(255, 229, 163, 0.8));
+  }
+}
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+.animate-gentle-float {
+  animation: gentle-float 4s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+.animate-twinkle {
+  animation: twinkle 2.5s ease-in-out infinite;
+}
